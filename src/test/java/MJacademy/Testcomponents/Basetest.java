@@ -42,7 +42,9 @@ public class Basetest {
 	{
 		
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\src\\main\\java\\MJacademy\\resources\\Globaldata.properties");
+		//FileInputStream fis = new FileInputStream(System.getProperty("user.dir") +"\\src\\main\\java\\MJacademy\\resources\\Globaldata.properties");
+		String filePath = System.getProperty("user.dir") +"/src/main/java/MJacademy/resources/Globaldata.properties";
+		FileInputStream fis = new FileInputStream(filePath);
 		prop.load(fis);
 		
 		//Below browser setup done via java ternary opearator
